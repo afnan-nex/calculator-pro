@@ -1,0 +1,15 @@
+{
+	"appId": "com.calculator.app",
+	"appName": "Calculator Pro",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"server": {
+		"androidScheme": "https"
+	},
+	"android": {
+		"backgroundColor": "#0a0c10",
+		"allowMixedContent": true,
+		"captureInput": true,
+		"webContentsDebuggingEnabled": true
+	}
+}
