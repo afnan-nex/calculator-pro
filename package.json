@@ -1,0 +1,31 @@
+{
+  "name": "calculator-apk",
+  "version": "1.0.0",
+  "description": "Modern, responsive scientific & standard calculator mobile app ready for Capacitor Android bundling",
+  "main": "index.html",
+  "scripts": {
+    "test": "node test.js",
+    "build": "node build.js",
+    "build:apk": "node build-apk.js",
+    "cap:add:android": "npm run build && npx cap add android",
+    "cap:sync": "npm run build && npx cap sync",
+    "cap:open:android": "npx cap open android",
+    "cap:run:android": "npm run build && npx cap run android",
+    "serve": "node -e \"const http=require('http'),fs=require('fs'),path=require('path');const port=3000;const mime={'html':'text/html','css':'text/css','js':'text/javascript','json':'application/json','svg':'image/svg+xml'};http.createServer((req,res)=>{let f=req.url==='/'?'/index.html':req.url;let p=path.join(__dirname,'www',f);fs.readFile(p,(e,d)=>{if(e){res.writeHead(404);res.end('Not Found');}else{let ext=path.extname(p).slice(1);res.writeHead(200,{'Content-Type':mime[ext]||'text/plain'});res.end(d);}});}).listen(port,()=>console.log('App running at http://localhost:'+port));\""
+  },
+  "keywords": [
+    "calculator",
+    "mobile",
+    "capacitor",
+    "android",
+    "pwa",
+    "scientific-calculator"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@capacitor/android": "^7.0.1",
+    "@capacitor/cli": "^7.0.1",
+    "@capacitor/core": "^7.0.1"
+  }
+}

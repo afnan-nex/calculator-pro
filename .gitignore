@@ -1,0 +1,26 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build artifacts & binaries
+*.apk
+*.aab
+dist/
+
+# Android build cache & user-specific paths
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/.idea/
+android/*.iml
+android/app/*.iml
+android/captures/
+android/.cxx/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini

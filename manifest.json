@@ -1,0 +1,18 @@
+{
+  "name": "Calculator Pro",
+  "short_name": "Calculator",
+  "description": "Modern, responsive scientific & standard calculator mobile app",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0c10",
+  "theme_color": "#0d0f14",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
